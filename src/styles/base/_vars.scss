@@ -1,4 +1,48 @@
 // Colors:
-$accent: rgb(209, 156, 42);
-$bodyBg: rgb(232, 245, 248);
-$borderMain: rgb(102, 105, 106);
+$accent: rgb(42, 142, 209);
+$accent2: rgb(42, 209, 167);
+$bodyBc: rgb(195, 219, 225);
+$appBarBg: rgb(159, 195, 217);
+$borderColor: rgb(131, 152, 160);
+$disabled: rgb(176, 192, 198);
+$gradientAccent: linear-gradient(
+  275deg,
+  rgba($accent2, 0.77) 0%,
+  rgba($accent, 0.56) 100%
+);
+$gradientDanger: linear-gradient(
+  275deg,
+  rgba(203, 80, 100, 0.44) 0%,
+  rgba(201, 6, 6, 0.48) 100%
+);
+// Dark Theme:
+$bodyBcDark: rgb(46, 57, 59);
+$appBarBgDark: rgb(43, 67, 81);
+
+// Borders:
+$border: 1px solid $borderColor;
+$borderRadius: 8px;
+
+// Transition:
+$transition: all 0.4s ease-out;
+
+// Templates:
+%btn {
+  min-width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border: none;
+  border-radius: $borderRadius;
+  background: $gradientAccent;
+  cursor: pointer;
+  transition: $transition;
+  color: black;
+  opacity: 0.7;
+
+  &:hover {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}

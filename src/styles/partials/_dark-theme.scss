@@ -1,0 +1,20 @@
+body.is-dark {
+  background-color: $bodyBcDark;
+  color: white;
+
+  .app-bar {
+    background-color: $appBarBgDark;
+  }
+
+  .toolbar .btn {
+    color: white;
+  }
+
+  table {
+    color: white;
+
+    tbody > tr > td.data-cell > span {
+      color: white;
+    }
+  }
+}

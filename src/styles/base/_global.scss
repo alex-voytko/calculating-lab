@@ -1,8 +1,15 @@
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: $bodyBg;
+  background-color: $bodyBc;
+  transition: $transition;
 }
 
-table {
-  border-radius: 8px;
+table,
+tr {
+  display: block;
+  cursor: default;
+}
+
+svg {
+  cursor: pointer;
 }
