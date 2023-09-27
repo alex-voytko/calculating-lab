@@ -1,8 +1,7 @@
-import { useContext, useEffect } from "react";
-import { appContext } from "../App";
+import { useContext } from "react";
 
+import { appContext } from "../App";
 import Icon from "./Icon";
-import { DarkTheme } from "../models";
 
 function Toggler() {
   const { setIsDarkTheme, isDarkTheme } = useContext(appContext);
