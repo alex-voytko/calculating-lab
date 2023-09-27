@@ -7,6 +7,7 @@
   background-color: $appBarBg;
   padding: 5px 30px;
   transition: $transition;
+  filter: drop-shadow(4px 2px 4px rgba(14, 10, 37, 0.2));
 
   .logo {
     font-size: 24px;

@@ -68,22 +68,3 @@
 .toggle-label:after {
   transition: $transition;
 }
-@media screen and (min-width: 1024px) {
-  .toggle-label {
-    width: 80px;
-    height: 33px;
-    &::after {
-      width: 33px;
-      height: 33px;
-    }
-    svg {
-      width: 28px;
-      height: 28px;
-    }
-  }
-  #dark-mode-toggle {
-    &:checked + .toggle-label:after {
-      left: 80px;
-    }
-  }
-}

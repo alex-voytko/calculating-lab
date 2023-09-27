@@ -4,10 +4,12 @@ body.is-dark {
 
   .app-bar {
     background-color: $appBarBgDark;
+    filter: drop-shadow(4px 1px 6px #c3c9cf);
   }
 
-  .toolbar .btn {
+  .toolbar button {
     color: white;
+    filter: none;
   }
 
   table {
