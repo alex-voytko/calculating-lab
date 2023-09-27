@@ -49,6 +49,7 @@ function Icon({ name, onClick }: IIconProps) {
           viewBox="0 0 32 32"
           version="1.1"
           onClick={onClick}
+          className="increment-icon"
         >
           <g
             id="Page-1"

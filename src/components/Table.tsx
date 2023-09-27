@@ -31,15 +31,22 @@ function Table({ matrix, checkboxes, checked }: ITableProps) {
 
   const debouncedTableCellHover = useDebouncedCallback((e) => {
     const { rowIndex, cellIndex } = e.target.closest(".data-cell").dataset;
+    if (e.target.closest(".increment-icon")) {
+      if (showNearest) {
+        setShowNearest(null);
+      }
+      return;
+    }
     if (!showNearest) {
       setShowNearest(matrix[Number(rowIndex)][Number(cellIndex)]);
     }
   }, 300);
 
-  const debouncedTableCellLeave = useDebouncedCallback(
-    () => setShowNearest(null),
-    300
-  );
+  const debouncedTableCellLeave = useDebouncedCallback(() => {
+    if (showNearest) {
+      setShowNearest(null);
+    }
+  }, 300);
 
   const debouncedSumHover = useDebouncedCallback((e) => {
     const { index } = e.target.dataset;
